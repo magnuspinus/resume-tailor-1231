@@ -1,9 +1,6 @@
-import chromium from "@sparticuz/chromium";
-import puppeteerCore from "puppeteer-core";
-import puppeteer from "puppeteer";
-import fs from "fs";
-import path from "path";
-import Handlebars from "handlebars";
+import React from "react";
+import { renderToStream } from "@react-pdf/renderer";
+import { getTemplate } from "../../lib/pdf-templates";
 
 export default async function handler(req, res) {
   if (req.method !== "GET") {
@@ -17,40 +14,15 @@ export default async function handler(req, res) {
       return res.status(400).send("Template parameter required");
     }
 
-    // Default to Resume.html if no template specified
+    // Default to Resume if no template specified
     const templateName = template || "Resume";
 
-    // Load Handlebars template
-    const templateFile = `${templateName}.html`;
-    const templatePath = path.join(process.cwd(), "templates", templateFile);
+    // Get React PDF template component
+    const TemplateComponent = getTemplate(templateName);
 
-    if (!fs.existsSync(templatePath)) {
+    if (!TemplateComponent) {
       return res.status(404).send(`Template "${templateName}" not found`);
     }
-
-    const templateSource = fs.readFileSync(templatePath, "utf-8");
-
-    // Register Handlebars helpers
-    Handlebars.registerHelper('formatKey', function (key) {
-      return key;
-    });
-
-    Handlebars.registerHelper('join', function (array, separator) {
-      if (Array.isArray(array)) {
-        return array.join(separator);
-      }
-      return '';
-    });
-
-    Handlebars.registerHelper('extractYear', function (dateStr) {
-      // Extract year from date strings like "Sep 2012", "Dec 2016", "2013", etc.
-      if (!dateStr) return '';
-      // Try to extract 4-digit year
-      const yearMatch = dateStr.match(/\b(19|20)\d{2}\b/);
-      return yearMatch ? yearMatch[0] : dateStr;
-    });
-
-    const compiledTemplate = Handlebars.compile(templateSource);
 
     // Mockup data for preview (no AI generation needed)
     const mockupData = {
@@ -126,31 +98,16 @@ export default async function handler(req, res) {
       ]
     };
 
-    // Render HTML
-    const html = compiledTemplate(mockupData);
+    // Render PDF with React PDF
+    const pdfDocument = React.createElement(TemplateComponent, { data: mockupData });
+    const pdfStream = await renderToStream(pdfDocument);
 
-    // Generate PDF with Puppeteer
-    const browser = process.env.NODE_ENV === 'production'
-      ? await puppeteerCore.launch({
-        args: chromium.args,
-        executablePath: await chromium.executablePath(),
-        headless: chromium.headless,
-      })
-      : await puppeteer.launch({ headless: "new" });
-
-    const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: "networkidle0" });
-    const pdfBuffer = await page.pdf({
-      format: "A4",
-      printBackground: true,
-      margin: {
-        top: "15mm",
-        bottom: "15mm",
-        left: "0mm",
-        right: "0mm"
-      },
-    });
-    await browser.close();
+    // Convert stream to buffer
+    const chunks = [];
+    for await (const chunk of pdfStream) {
+      chunks.push(chunk);
+    }
+    const pdfBuffer = Buffer.concat(chunks);
 
     console.log("PDF buffer type:", typeof pdfBuffer);
     console.log("PDF buffer length:", pdfBuffer?.length);

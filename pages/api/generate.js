@@ -1,9 +1,8 @@
-import chromium from "@sparticuz/chromium";
-import puppeteerCore from "puppeteer-core";
-import puppeteer from "puppeteer";
 import fs from "fs";
 import path from "path";
-import Handlebars from "handlebars";
+import React from "react";
+import { renderToStream } from "@react-pdf/renderer";
+import { getTemplate } from "../../lib/pdf-templates";
 import { callAI } from "../../lib/ai-service";
 
 export default async function handler(req, res) {
@@ -325,46 +324,20 @@ Return ONLY valid JSON: {"title":"...","summary":"...","skills":{"Category":["Sk
       }
     });
 
-    // Load Handlebars template (dynamic based on user selection)
-    const templateFile = `${templateName}.html`;
-    const templatePath = path.join(process.cwd(), "templates", templateFile);
-
-    if (!fs.existsSync(templatePath)) {
-      console.error(`Template not found: ${templateFile}`);
+    // Get React PDF template component
+    const TemplateComponent = getTemplate(templateName);
+    
+    if (!TemplateComponent) {
+      console.error(`Template not found: ${templateName}`);
       return res.status(404).send(`Template "${templateName}" not found`);
     }
 
-    console.log(`Using template: ${templateFile}`);
-    const templateSource = fs.readFileSync(templatePath, "utf-8");
-
-    // Register Handlebars helpers
-    Handlebars.registerHelper('formatKey', function (key) {
-      // Convert keys like "Programming Languages" or "frontend" to proper format
-      return key;
-    });
-
-    Handlebars.registerHelper('join', function (array, separator) {
-      // Join array elements with separator
-      if (Array.isArray(array)) {
-        return array.join(separator);
-      }
-      return '';
-    });
-
-    Handlebars.registerHelper('extractYear', function (dateStr) {
-      // Extract year from date strings like "Sep 2012", "Dec 2016", "2013", etc.
-      if (!dateStr) return '';
-      // Try to extract 4-digit year
-      const yearMatch = dateStr.match(/\b(19|20)\d{2}\b/);
-      return yearMatch ? yearMatch[0] : dateStr;
-    });
-
-    const compiledTemplate = Handlebars.compile(templateSource);
+    console.log(`Using template: ${templateName}`);
 
     // Prepare data for template
     const templateData = {
       name: profileData.name,
-      title: "Senior Software Engineer",
+      title: resumeContent.title || "Senior Software Engineer",
       email: profileData.email,
       phone: null, // Excluded from resume
       location: profileData.location,
@@ -383,32 +356,16 @@ Return ONLY valid JSON: {"title":"...","summary":"...","skills":{"Category":["Sk
       education: profileData.education
     };
 
-    // Render HTML
-    const html = compiledTemplate(templateData);
-    console.log("HTML rendered from template");
-
-    // Generate PDF with Puppeteer
-    const browser = process.env.NODE_ENV === 'production'
-      ? await puppeteerCore.launch({
-        args: chromium.args,
-        executablePath: await chromium.executablePath(),
-        headless: chromium.headless,
-      })
-      : await puppeteer.launch({ headless: "new" });
-
-    const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: "networkidle0" });
-    const pdfBuffer = await page.pdf({
-      format: "A4",
-      printBackground: true,
-      margin: {
-        top: "15mm",
-        bottom: "15mm",
-        left: "0mm",
-        right: "0mm"
-      },
-    });
-    await browser.close();
+    // Render PDF with React PDF
+    const pdfDocument = React.createElement(TemplateComponent, { data: templateData });
+    const pdfStream = await renderToStream(pdfDocument);
+    
+    // Convert stream to buffer
+    const chunks = [];
+    for await (const chunk of pdfStream) {
+      chunks.push(chunk);
+    }
+    const pdfBuffer = Buffer.concat(chunks);
 
     console.log("PDF generated successfully!");
 
