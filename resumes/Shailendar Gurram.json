@@ -1,0 +1,49 @@
+{
+    "name": "Shailendar Gurram",
+    "email": "",
+    "title": "Senior Software Engineer",
+    "location": "San Jose, California, United States",
+    "postalCode": "95125",
+    "phone": "+1 408 213 1188",
+    "linkedin": "https://www.linkedin.com/in/shailendargurram-144160203",
+    "github": "",
+    "education": [
+      {
+        "degree": "Bachelor's degree in Computer Science",
+        "school": "Institute of Aeronautical Engineering",
+        "start_year": "2009",
+        "end_year": "2013"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Genentech",
+        "title": "Senior Software Engineer",
+        "start_date": "Jan 2020",
+        "end_date": "Dec 2025",
+        "location": "South San Francisco, California, United States"
+      },
+      {
+        "company": "Kroger Technology & Digital",
+        "title": "Software Engineer",
+        "start_date": "Feb 2019",
+        "end_date": "Dec 2019",
+        "location": "Cincinnati, Ohio, United States"
+      },
+      {
+        "company": "Mizuho",
+        "title": "Software Developer",
+        "start_date": "Nov 2016",
+        "end_date": "Jan 2019",
+        "location": "New Jersey, United States"
+      },
+      {
+        "company": "Vaurustech",
+        "title": "Software Developer",
+        "start_date": "Apr 2013",
+        "end_date": "Aug 2015",
+        "location": "Hyderabad, Telangana, India"
+      }
+    ]
+  }
+  

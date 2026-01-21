@@ -1,0 +1,70 @@
+{
+    "name": "Andrew Facchiano",
+    "email": "",
+    "title": "Senior Developer",
+    "location": "Santa Cruz, California, United States",
+    "postalCode": "95060",
+    "phone": "+1 831 425 1500",
+    "linkedin": "https://www.linkedin.com/in/andrewfacchiano-0961a761",
+    "github": "",
+    "education": [
+      {
+        "degree": "Computer Science: Computer Game Design",
+        "school": "University of California, Santa Cruz",
+        "start_year": "Sep 2009",
+        "end_year": "Jun 2013"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Smarter Balanced",
+        "title": "Senior Software Developer",
+        "start_date": "Jul 2021",
+        "end_date": "Dec 2025",
+        "location": "UCSC"
+      },
+      {
+        "company": "University of California, Berkeley",
+        "title": "Applications Developer",
+        "start_date": "Jul 2019",
+        "end_date": "Jul 2021",
+        "location": "Berkeley"
+      },
+      {
+        "company": "Prezi",
+        "title": "Software Engineer",
+        "start_date": "Oct 2018",
+        "end_date": "Jan 2019",
+        "location": "San Francisco Bay Area"
+      },
+      {
+        "company": "Gap Inc.",
+        "title": "Web Development Engineer",
+        "start_date": "Sep 2013",
+        "end_date": "Sep 2018",
+        "location": "San Francisco Bay Area"
+      },
+      {
+        "company": "iD Tech Camps",
+        "title": "Instructor",
+        "start_date": "Jun 2012",
+        "end_date": "Aug 2012",
+        "location": ""
+      },
+      {
+        "company": "EPRI",
+        "title": "Intern",
+        "start_date": "Jun 2010",
+        "end_date": "Aug 2010",
+        "location": ""
+      },
+      {
+        "company": "Peninsula T.V",
+        "title": "Intern",
+        "start_date": "Sep 2009",
+        "end_date": "Nov 2009",
+        "location": "San Carlos"
+      }
+    ]
+  }
+  
