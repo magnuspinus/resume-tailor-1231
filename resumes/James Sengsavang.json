@@ -1,0 +1,41 @@
+{
+    "name": "James Sengsavang",
+    "email": "james.sengsavang@outlook.com",
+    "title": "QA Automation Engineer",
+    "location": "Grand Prairie, Texas, United States",
+    "postalCode": "75053",
+    "phone": "+1 972 523 6102",
+    "linkedin": "https://www.linkedin.com/in/james-sengsavang-555025267",
+    "github": "https://github.com/james-sengsavang",
+    "education": [
+        {
+            "degree": "Bachelor of Science - BS, Kinesiology and Exercise Science",
+            "school": "The University of Texas at Arlington",
+            "start_year": "Jan 2016",
+            "end_year": "May 2019"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Hillcrest Bank",
+            "title": "QA Automation Engineer",
+            "start_date": "Jan 2019",
+            "end_date": "Present",
+            "location": "Dallas, Texas, United States"
+        },
+        {
+            "company": "Carvana",
+            "title": "QA Automation Engineer",
+            "start_date": "Jul 2016",
+            "end_date": "Dec 2018",
+            "location": "Richmond, Virginia, United States"
+        },
+        {
+            "company": "Southwest Airlines",
+            "title": "QA Automation Engineer",
+            "start_date": "Jul 2015",
+            "end_date": "Jun 2016",
+            "location": "Dallas, Texas, United States"
+        }
+    ]
+}
