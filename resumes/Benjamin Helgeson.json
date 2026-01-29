@@ -1,0 +1,96 @@
+{
+    "name": "Benjamin Helgeson",
+    "email": "benjamin.helgeson@outlook.com",
+    "title": "Senior Software Engineer",
+    "location": "Austin, Texas, United States",
+    "postalCode": "78735",
+    "address": {
+        "street": "5704 Parkwood Drive",
+        "city": "Austin",
+        "state": "TX",
+        "country": "United States"
+    },
+    "phone": "+1 512 772 6146",
+    "linkedin": "https://www.linkedin.com/in/benjaminhelgeson-06586b34",
+    "github": "https://github.com/benjaminhelgeson",
+
+    "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "CI/CD",
+        "Agile / Scrum",
+        "Frontend Architecture",
+        "Joomla",
+        "WordPress",
+        "Subversion"
+    ],
+
+    "certifications": [
+        "Project Management Professional (PMP)",
+        "Certified Scrum Master (CSM)",
+        "Generative AI Overview for Project Managers"
+    ],
+
+    "education": [
+        {
+            "degree": "Bachelor's Degree, Project Management",
+            "school": "Colorado State University – Global Campus",
+            "start_year": "2018",
+            "end_year": "2020"
+        }
+    ],
+
+    "experience": [
+        {
+            "company": "Sport Clips, Inc.",
+            "title": "Senior Software Engineer",
+            "start_date": "Aug 2024",
+            "end_date": "Present",
+            "location": "Georgetown, Texas, United States"
+        },
+        {
+            "company": "Solution Machine",
+            "title": "Software Consultant",
+            "start_date": "Dec 2021",
+            "end_date": "Aug 2024",
+            "location": "United States"
+        },
+        {
+            "company": "General Motors",
+            "title": "Scrum Master",
+            "start_date": "Feb 2015",
+            "end_date": "Aug 2021",
+            "location": "Austin, Texas, United States"
+        },
+        {
+            "company": "Shango",
+            "title": "UI / Front End Engineer",
+            "start_date": "Apr 2014",
+            "end_date": "Feb 2015",
+            "location": "Austin, Texas, United States"
+        },
+        {
+            "company": "Vubeology, Inc.",
+            "title": "Software Developer",
+            "start_date": "May 2013",
+            "end_date": "Jan 2014",
+            "location": "Austin, Texas, United States"
+        },
+        {
+            "company": "BioWare",
+            "title": "Senior Web Developer",
+            "start_date": "Sep 2010",
+            "end_date": "Apr 2013",
+            "location": "United States"
+        },
+        {
+            "company": "Kinesis Survey Technologies",
+            "title": "Developer",
+            "start_date": "May 2006",
+            "end_date": "Jul 2010",
+            "location": "United States"
+        }
+    ]
+}
