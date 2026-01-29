@@ -2,14 +2,8 @@
     "name": "Benjamin Helgeson",
     "email": "benjamin.helgeson@outlook.com",
     "title": "Senior Software Engineer",
-    "location": "Austin, Texas, United States",
+    "location": "5704 Parkwood Drive, Austin, TX 78735, United States",
     "postalCode": "78735",
-    "address": {
-        "street": "5704 Parkwood Drive",
-        "city": "Austin",
-        "state": "TX",
-        "country": "United States"
-    },
     "phone": "+1 512 772 6146",
     "linkedin": "https://www.linkedin.com/in/benjaminhelgeson-06586b34",
     "github": "https://github.com/benjaminhelgeson",
