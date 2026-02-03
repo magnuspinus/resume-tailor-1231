@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -176,6 +177,24 @@ export default function Home() {
               >
                 Go to Profile
               </button>
+
+              <div style={{
+                marginTop: "20px",
+                paddingTop: "20px",
+                borderTop: `1px solid ${colors.cardBorder}`,
+                textAlign: "center"
+              }}>
+                <Link
+                  href="/manual"
+                  style={{
+                    color: theme === "dark" ? "#6ab7ff" : "#2563eb",
+                    fontSize: "14px",
+                    textDecoration: "none"
+                  }}
+                >
+                  No API key? Use Manual Resume (ChatGPT) →
+                </Link>
+              </div>
             </form>
           </div>
         </div>
