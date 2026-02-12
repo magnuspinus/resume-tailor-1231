@@ -37,14 +37,13 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 
 **WHERE TO USE:**
 - Summary: 3-5 domain keywords (lines 2-4)
-- Skills: Dedicated domain category with 10-15 keywords
+- Skills: Dedicated domain category with 10-15s keywords
 - Experience: Each role must include 2–3 bullets total that naturally incorporate domain or compliance keywords.
 
 ---
 
 ### **2. TITLE**
-- Use EXACT job title from JD
-- Examples: "Senior Data Scientist", "Senior Full Stack Engineer", "DevOps Engineer"
+- Examples: "Senior Software Engineer ", "Senior Full Stack Engineer", "DevOps Engineer", "AI/ML Engineer", "Software Developer", ...
 
 ---
 
