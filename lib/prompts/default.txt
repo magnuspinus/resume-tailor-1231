@@ -48,7 +48,7 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 ### **3. SUMMARY** (5-6 lines, 8-12 JD keywords + 3-5 domain keywords)
 
 **Structure:**
-- **Line 1:** [Resume template Title] with {{yearsOfExperience}}+ years in [domain from JD] across startup and enterprise environments
+- **Line 1:** {{resumeTitle}} with {{yearsOfExperience}}+ years in [domain from JD] across startup and enterprise environments
 - **Line 2:** Expertise in [domain keyword] + [3-4 EXACT JD technologies WITH versions if specified]
 - **Line 3:** Proven track record in [domain keyword] + [key achievement with metric: %, $, time, scale]
 - **Line 4:** Proficient in [3-4 more JD technologies/methodologies]
