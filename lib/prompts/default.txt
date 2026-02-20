@@ -98,16 +98,21 @@ Total: ~70 skills (scannable and professional)
 
 ### **5. EXPERIENCE** ({{experienceCount}} entries, 6-8 bullets each)
 
-**Requirements:**
-- Generate {{experienceCount}} job entries matching work history
-- 6-8 bullets per job (most recent jobs get 8, older jobs 7)
-- 35–45 words per bullet correctly, optimized for clarity and natural senior-engineer tone.
+**STRICT Requirements (must be followed):**
+- Generate exactly {{experienceCount}} job entries; one entry per job in the work history—no more, no fewer.
+- Bullet count per job: most recent role = 8 bullets, second role = 7 or 8 bullets, older roles = 6 or 7 bullets. Each job must have at least 6 and at most 8 bullets.
+- Word count per bullet: every bullet MUST be 35–45 words. Count words; do not write short 1-line bullets or run-on sentences. This is required for ATS and readability.
 - For each work experience, ensure all technologies listed were widely available and commonly used in production during that role's time period; do not include tools, frameworks, or practices released after the role ended or unlikely to have been adopted in that era.
 - Include 2-4 JD keywords per bullet
 - EVERY bullet needs a metric (%, $, time, scale, users)
 - Metrics have to be approximate. Use ranges or natural phrasing (e.g., '~40%', 'significant reduction', 'hundreds of thousands of users') when precise figures may feel unnatural. Ensure at least 50–60% of bullets include a metric, while the remainder focus on scope, ownership, or architectural impact.
 - Add industry context to 2-3 bullets per job
 - Prioritize JD keywords by frequency in the following order: Job Title > Core Technologies > Domain Compliance > Soft Skills.
+
+**Bullet length (35–45 words)—examples:**
+- Too short (❌ ~15 words): "Built APIs for the payment team. Improved latency and reliability."
+- Correct (✅ 35–40 words): "Architected REST and GraphQL APIs for the payment platform using Node.js and PostgreSQL, improving p99 latency by 30% and enabling 2M+ daily transactions with 99.9% uptime for fintech clients."
+- Correct (✅ 40–45 words): "Led migration of legacy services to Kubernetes and Terraform, reducing deployment time by 60% and standardizing CI/CD across 5 teams; implemented monitoring and alerting that cut incident response time by half."
 
 **Bullet Structure:**
 [Action Verb] + [JD Technology] + [what you built] + [business impact] + [metric]
@@ -146,5 +151,6 @@ Total: ~70 skills (scannable and professional)
 
 ---
 
-Return ONLY valid JSON: {"title":"...","summary":"...","skills":{"Category":["Skill1","Skill2"]},"experience":[{"title":"...","details":["bullet1","bullet2"]}]}
+Return ONLY valid JSON: {"title":"...","summary":"...","skills":{"Category":["Skill1","Skill2"]},"experience":[{"title":"...","details":["bullet1","bullet2",...]}]}
+Each experience entry must have 6-8 bullets in "details"; each bullet must be 35-45 words.
 
