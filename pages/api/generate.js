@@ -87,7 +87,8 @@ export default async function handler(req, res) {
       workHistory: workHistory,
       education: education,
       jobDescription: jd,
-      experienceCount: profileData.experience.length
+      experienceCount: profileData.experience.length,
+      resumeTitle: profileData.title || "Senior Software Engineer"
     });
 
     const aiResponse = await callAI(prompt, provider, model);

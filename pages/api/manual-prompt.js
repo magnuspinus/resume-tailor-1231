@@ -73,6 +73,7 @@ export default async function handler(req, res) {
       education,
       jobDescription: jd,
       experienceCount: profileData.experience.length,
+      resumeTitle: profileData.title || "Senior Software Engineer",
     });
 
     res.setHeader("Content-Type", "application/json");

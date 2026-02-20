@@ -41,7 +41,8 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 ---
 
 ### **2. TITLE**
-- Examples: {{resumeTitle}}
+- **Use this exact title** (from the candidate's resume) in the JSON "title" field and in the first line of the summary: **{{resumeTitle}}**
+- Do not invent a different job role title; use {{resumeTitle}} verbatim.
 
 ---
 
@@ -100,7 +101,7 @@ Total: ~70 skills (scannable and professional)
 **Requirements:**
 - Generate {{experienceCount}} job entries matching work history
 - 6-8 bullets per job (most recent jobs get 8, older jobs 7)
-- 40–50 words per bullet correctly, optimized for clarity and natural senior-engineer tone.
+- 35–45 words per bullet correctly, optimized for clarity and natural senior-engineer tone.
 - For each work experience, ensure all technologies listed were widely available and commonly used in production during that role's time period; do not include tools, frameworks, or practices released after the role ended or unlikely to have been adopted in that era.
 - Include 2-4 JD keywords per bullet
 - EVERY bullet needs a metric (%, $, time, scale, users)
