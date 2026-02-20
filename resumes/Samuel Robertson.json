@@ -1,0 +1,50 @@
+{
+  "name": "Samuel Robertson",
+  "email": "samm.robert@outlook.com",
+  "phone": "+1 512 710 3215",
+  "location": "Heartland, TX",
+  "postalCode": "75126",
+  "linkedin": "https://www.linkedin.com/in/samuel-robertson-555025267",
+  "website": "https://samrobertson.com",
+  "github": "https://github.com/samuelrobertson",
+  
+  "experience": [
+    {
+        "title": "Senior Ruby on Rails Developer",
+        "company": "innervent, inc",
+        "location": "San Antonio, TX, United States",
+        "start_date": "Feb 2023",
+        "end_date": "Jan 2026"
+    },
+    {
+      "title": "Backend Web Developer (Ruby on Rails)",
+      "company": "Venn Technology",
+      "location": "Grapevine, TX",
+      "start_date": "Sep 2018",
+      "end_date": "Feb 2023"
+    },
+    {
+      "title": "Full Stack Developer (Ruby on Rails)",
+      "company": "Stonecrop Technologies",
+      "location": "Remote",
+      "start_date": "Sep 2014",
+      "end_date": "Aug 2018"
+    },
+    {
+      "title": "Software Developer-Intern",
+      "company": "G5",
+      "location": "Bend, OR",
+      "start_date": "Jul 2013",
+      "end_date": "Jun 2014"
+    }
+  ],
+  
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "The College of Saint Rose",
+      "start_year": "2008",
+      "end_year": "2012"
+    }
+  ]
+}
