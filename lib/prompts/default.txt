@@ -57,7 +57,7 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 - **Line 6:** Strong focus on [2-3 key JD skill areas] and delivering scalable, production-ready solutions
 
 **Example (FinTech):**
-"Senior Software Engineer with 8+ years building scalable fintech platforms. Expertise in **payment processing systems**, **PCI-DSS compliance**, React.js 18, Node.js 20, and PostgreSQL. Proven track record implementing **fraud detection algorithms** that reduced chargebacks by 40% and processed $500M+ annually. Proficient in AWS infrastructure, Docker, Kubernetes, and **KYC/AML compliance frameworks**. Collaborative problem-solver with experience leading cross-functional teams in fast-paced startup environments. Strong focus on secure payment infrastructure, regulatory compliance, and delivering high-performance financial applications."
+"Senior Software Engineer with 8+ years building scalable fintech platforms. Expertise in payment processing systems, PCI-DSS compliance, React.js 18, Node.js 20, and PostgreSQL. Proven track record implementing fraud detection algorithms that reduced chargebacks by 40% and processed $500M+ annually. Proficient in AWS infrastructure, Docker, Kubernetes, and KYC/AML compliance frameworks. Collaborative problem-solver with experience leading cross-functional teams in fast-paced startup environments. Strong focus on secure payment infrastructure, regulatory compliance, and delivering high-performance financial applications."
 
 ---
 
@@ -129,7 +129,7 @@ Total: ~70 skills (scannable and professional)
 
 
 **Example Bullet (with domain keywords):**
-"Architected **secure payment processing system** using **PCI-DSS compliant** infrastructure with Node.js 20, PostgreSQL, and Redis, implementing **fraud detection algorithms** and **tokenization** that processed $500M+ annually while reducing chargebacks by 40% and maintaining 99.99% uptime for 2M+ users."
+"Architected secure payment processing system using PCI-DSS compliant infrastructure with Node.js 20, PostgreSQL, and Redis, implementing fraud detection algorithms and tokenization that processed $500M+ annually while reducing chargebacks by 40% and maintaining 99.99% uptime for 2M+ users."
 
 ---
 
