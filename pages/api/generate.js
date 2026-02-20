@@ -209,7 +209,7 @@ export default async function handler(req, res) {
     // Prepare data for template
     const templateData = {
       name: profileData.name,
-      title: resumeContent.title || "Senior Software Engineer",
+      title: profileData.title,
       email: profileData.email,
       phone: null, // Excluded from resume
       location: profileData.location,

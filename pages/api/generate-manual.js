@@ -90,7 +90,7 @@ export default async function handler(req, res) {
 
     const templateData = {
       name: profileData.name,
-      title: resumeContent.title || "Senior Software Engineer",
+      title: profileData.title,
       email: profileData.email,
       phone: null,
       location: profileData.location,
