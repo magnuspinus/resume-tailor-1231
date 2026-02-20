@@ -1,7 +1,7 @@
 {
     "name": "Vinay Matoori",
     "email": "vinay.matoori@outlook.com",
-    "title": "Software Engineer",
+    "title": "Senior Software Developer",
     "location": "710 Ferree St, Coraopolis, Pennsylvania, United States",
     "postalCode": "15108",
     "phone": "+1 213 723 0618",
@@ -33,10 +33,10 @@
     "experience": [
       {
         "company": "Thermo Fisher Scientific",
-        "title": "Software Developer",
+        "title": "Senior Software Developer",
         "start_date": "Mar 2021",
         "end_date": "Present",
-        "location": "Coraopolis, Pennsylvania · On-site",
+        "location": "Coraopolis, Pennsylvania",
         "responsibilities": [
           "Developed product detail pages and User Management Modules for ecommerce website.",
           "Developed MicroServices using SpringBoot to migrate ecommerce website from IBM WCS.",
@@ -52,7 +52,7 @@
         "title": "Software Developer",
         "start_date": "Sep 2017",
         "end_date": "Mar 2021",
-        "location": "Pittsburgh, Pennsylvania, United States · On-site",
+        "location": "Pittsburgh, Pennsylvania, United States",
         "responsibilities": [
           "Developed MicroServices using Spring Boot & Spring-Cloud (Netflix OSS) and Containers.",
           "Performed Integration and Unit Testing using Groovy and Spock.",
@@ -66,7 +66,7 @@
         "title": "Programming Analyst",
         "start_date": "Mar 2017",
         "end_date": "Aug 2017",
-        "location": "Foster City, California, United States · On-site",
+        "location": "Foster City, California, United States",
         "responsibilities": [
           "Developed data service applications for file transfer using SFTP and SMTP.",
           "Configured scheduled jobs with Quartz Scheduler and asynchronous processes.",

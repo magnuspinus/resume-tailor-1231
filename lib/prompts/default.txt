@@ -3,8 +3,6 @@ You are a world-class ATS optimization expert. Create a resume that scores 95-10
 **🚨 CRITICAL OUTPUT: Return ONLY valid JSON. No markdown, explanations, or extra text.**
 Format: {"title":"...","summary":"...","skills":{...},"experience":[...]}
 
-***Wrap ONLY the critical JD keywords within each section using <strong> tags. Do NOT wrap metrics, verbs, or filler terms.***
-
 ## PROFILE DATA:
 **Candidate:** {{name}}
 **Contact:** {{email}} | {{location}}
@@ -38,7 +36,7 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 **WHERE TO USE:**
 - Summary: 3-5 domain keywords (lines 2-4)
 - Skills: Dedicated domain category with 10-15s keywords
-- Experience: Each role must include 2–3 bullets total that naturally incorporate domain or compliance keywords.
+- Experience: Each role must include 6–8 bullets total that naturally incorporate domain or compliance keywords.
 
 ---
 
@@ -50,7 +48,7 @@ Analyze JD "About Us" section for **10-15 domain/compliance keywords** specific 
 ### **3. SUMMARY** (5-6 lines, 8-12 JD keywords + 3-5 domain keywords)
 
 **Structure:**
-- **Line 1:** [JD Title] with {{yearsOfExperience}}+ years in [domain from JD] across startup and enterprise environments
+- **Line 1:** [Resume Title] with {{yearsOfExperience}}+ years in [domain from JD] across startup and enterprise environments
 - **Line 2:** Expertise in [domain keyword] + [3-4 EXACT JD technologies WITH versions if specified]
 - **Line 3:** Proven track record in [domain keyword] + [key achievement with metric: %, $, time, scale]
 - **Line 4:** Proficient in [3-4 more JD technologies/methodologies]
@@ -101,8 +99,8 @@ Total: ~70 skills (scannable and professional)
 
 **Requirements:**
 - Generate {{experienceCount}} job entries matching work history
-- 6-8 bullets per job (most recent jobs get 8, older jobs 5-6)
-- 20–40 words per bullet, optimized for clarity and natural senior-engineer tone.
+- 6-8 bullets per job (most recent jobs get 8, older jobs 7)
+- 50–60 words per bullet, optimized for clarity and natural senior-engineer tone.
 - For each work experience, ensure all technologies listed were widely available and commonly used in production during that role's time period; do not include tools, frameworks, or practices released after the role ended or unlikely to have been adopted in that era.
 - Include 2-4 JD keywords per bullet
 - EVERY bullet needs a metric (%, $, time, scale, users)
