@@ -1,0 +1,44 @@
+{
+    "name": "Christian Richardson",
+    "title": "Senior AI & Full Stack Software Engineer",
+    "email": "christianrichardson0327@outlook.com",
+    "phone": "+1 (407) 860-0327",
+    "location": "Orlando, Florida, United States",
+    "address": "3231 Parkside Dr",
+    "postalCode": "32803",
+    "linkedin": "https://www.linkedin.com/in/christian-richardson-a7a065b9",
+    "website": "",
+    "github": "https://github.com/christianrichardson0327",
+    "experience": [
+      {
+        "company": "Ellipsis Health",
+        "title": "Senior AI & Software Engineer",
+        "location": "California, United States",
+        "start_date": "Mar 2024",
+        "end_date": "Present"
+      },
+      {
+        "company": "Bittensor",
+        "title": "Senior AI Software Engineer",
+        "location": "Toronto, Ontario, Canada",
+        "start_date": "Oct 2021",
+        "end_date": "Feb 2024"
+      },
+      {
+        "company": "Net Solutions",
+        "title": "Full Stack Engineer",
+        "location": "California, United States",
+        "start_date": "Jun 2016",
+        "end_date": "Sep 2021"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "school": "Brooklyn College",
+        "start_year": "2012",
+        "end_year": "2016"
+      }
+    ],
+    "resumeStyle": "executive"
+  }
