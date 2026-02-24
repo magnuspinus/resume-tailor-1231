@@ -1,0 +1,56 @@
+{
+    "name": "Kenton Brown",
+    "email": "kenton.brownwork@yahoo.com",
+    "phone": "+1 863-315-9743",
+    "location": "Fort Lauderdale, Florida, United States",
+    "address" : "201 SW 5th Ave, Fort Lauderdale",
+    "postalCode": "33312",
+    "linkedin": "https://www.linkedin.com/in/kentonbrown-8687a8323",
+    "website": "",
+    "github": "https://github.com/kbrow1i",
+    "experience": [
+      {
+        "company": "Blenders",
+        "title": "Lead Full Stack Developer",
+        "location": "California, United States (Remote)",
+        "start_date": "Jul 2023",
+        "end_date": "Nov 2025"
+      },
+      {
+        "company": "Kreatika",
+        "title": "Senior Full Stack Developer",
+        "location": "Toronto, Ontario, Canada (Remote)",
+        "start_date": "Dec 2020",
+        "end_date": "Apr 2023"
+      },
+      {
+        "company": "Coinportfol",
+        "title": "Senior Software Engineer",
+        "location": "United Kingdom (Remote)",
+        "start_date": "Aug 2017",
+        "end_date": "Nov 2020"
+      },
+      {
+        "company": "Accenture",
+        "title": "Full Stack Developer",
+        "location": "",
+        "start_date": "Nov 2014",
+        "end_date": "May 2017"
+      },
+      {
+        "company": "Infosys",
+        "title": "Full Stack Developer Intern",
+        "location": "",
+        "start_date": "Aug 2013",
+        "end_date": "Jul 2014"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "school": "Florida State University",
+        "start_year": "2009",
+        "end_year": "2013"
+      }
+    ]
+  }
